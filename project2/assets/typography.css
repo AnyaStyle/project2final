@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
+
+h1 {
+  text-align: center;
+  color: #171717;
+  font-size: 50px;
+}
+
+h4 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#accommodation-type-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #171717;
+}
+
+#check-in-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #171717;
+}
+
+#check-out-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #171717;
+}
+
+#guests-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #171717;
+}
+
+#accommodation-type {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+#check-in {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+#check-out {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+#guest {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}

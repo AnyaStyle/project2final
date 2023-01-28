@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Zealand Tourism Accomodation</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="/assets/images/favicon-32x32.png">
+  <script defer src="/scripts.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Top black line - header -->
+  <header id="header">
+    <div id="header-logo">
+      <a href=" https://www.newzealand.com/nz/"><img src="/assets/images/header-logo.png"
+          alt="new zealand tourism logo" /></a>
+    </div>
+  </header>
+
+  <div id="main-container">
+    <section class="section-header">
+      <h1>ACCOMMODATION OPTIONS AND PRICES</h1>
+    </section>
+
+    <!-- Invisible by default -->
+    <section id="alert-message">
+      <h3>Please fill in all the fields of the form:</h3>
+      <p id="isvalid-accomodation" class="invalid">Accommodation Type</p>
+      <p id="isvalid-check-in" class="invalid">Check-in</p>
+      <p id="isvalid-check-out" class="invalid">Check-out</p>
+      <p id="isvalid-guests" class="invalid">Guests (from 1 to 4)</p>
+    </section>
+
+
+    <!-- Selection area -->
+
+    <div class="grid-selection">
+      <div id="accommodation-type-header">Accommodation Type</div>
+      <div id="check-in-header">Check-in</div>
+      <div id="check-out-header">Check-out</div>
+      <div id="guests-header">Guests</div>
+      <div></div>
+
+      <!-- Accomodation type selector -->
+      <div class="selector">
+        <select id="accommodation-type">
+          <option value="0" selected="selected">Select Accommodation Type</option>
+          <option value=" 1">Hotel</option>
+          <option value="2">Hostel</option>
+          <option value="3">Motel</option>
+          <option value="4">House</option>
+        </select>
+      </div>
+
+      <!-- Check-in date -->
+      <div class="selector">
+        <input type="date" id="check-in" name="check-in">
+      </div>
+
+      <!-- Check-out date -->
+      <div class="selector">
+        <input type="date" id="check-out" name="check-out">
+      </div>
+
+      <!-- Type number of guests -->
+      <div class="selector">
+        <input type="text" id="guests" value="" name="guests" placeholder="Add Number of Guests">
+      </div>
+
+      <!-- Call function -->
+      <div>
+        <button class="button" onclick="onClickSearchHandler()">Search</button>
+      </div>
+    </div>
+
+    <!-- Invisible by default; content generated in JS -->
+    <div id="user-selection-render"></div>
+
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Find us on</h4>
+          <a href="https://twitter.com/purenewzealand"><i class="icon twitter"></i>Twitter</a><br>
+          <a href="https://www.instagram.com/purenewzealand/"><i class="icon instagram"></i>Instagram</a><br>
+          <a href="https://www.facebook.com/purenewzealand"><i class="icon facebook"></i>Facebook</a><br>
+          <a href="https://www.youtube.com/purenewzealand"><i class="icon youtube"></i>Youtube</a>
+        </div>
+        <div class="footer-column">
+          <h4>Contact us</h4>
+          <a href="https://www.newzealand.com/int/form/request-a-map/">Request a map</a><br>
+          <a href="https://www.newzealand.com/int/form/site-feedback/">Ste feedback</a><br>
+          <a href="https://www.newzealand.com/int/form/report-a-problem/">Need help</a>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <a href="https://www.newzealand.com/int/utilities/frequently-asked-questions/">FAQs</a><br>
+          <a href="https://www.newzealand.com/int/utilities/about-newzealand/">About newzealand.com</a><br>
+          <a href="https://www.newzealand.com/int/utilities/operator-help/">Adding your business and deals</a><br>
+          <a href="https://www.newzealand.com/int/utilities/linking-to-newzealand/">Linking to newzealand.com</a><br>
+          <a href="https://www.newzealand.com/int/utilities/terms-of-use/">Terms of use</a><br>
+          <a href="https://www.newzealand.com/int/utilities/privacy-policy/">Privacy Policy</a><br>
+          <a href="https://www.newzealand.com/int/utilities/cookies/">Cookies</a>
+        </div>
+        <div class="footer-column">
+          <h4>Our other sites</h4>
+          <a href="https://media.newzealand.com/">Media</a><br>
+          <a href="https://visuals.newzealand.com/">The Visual Library</a><br>
+          <a href="https://traveltrade.newzealand.com/">Travel Trade</a><br>
+          <a href="https://businessevents.newzealand.com/">Business Events</a><br>
+          <a href="https://www.tourismnewzealand.com/">Corporate website</a><br>
+          <a href="https://register.newzealand.com/">Tourism Business Database</a>
+        </div>
+        <div class="footer-column">
+          <img class="footer-logo" src="assets/images/footer-logo.jpg" alt="100% new zealand and logo with silver fern">
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+
+</html>

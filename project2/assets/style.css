@@ -1,0 +1,144 @@
+@import url(/assets/typography.css);
+
+body {
+  display: block;
+  margin: 0;
+}
+
+#header {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: #171717;
+}
+
+#header-logo {
+  padding: 25px 0 0 60px;
+}
+
+#main-container {
+  padding-left: 60px;
+}
+
+.section-header {
+  text-align: center;
+  color: #171717;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 40px;
+}
+
+.grid-selection {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 65px;
+  padding: 40px;
+  margin: 100px;
+  font-size: 30px;
+}
+
+.grid-selection>div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+
+.button {
+  border: none;
+  background-color: #41913C;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #171717;
+  justify-content: space-around;
+  display: grid;
+  height: 300px;
+  align-content: center;
+  grid-template-columns: auto auto auto auto auto;
+  color: white;
+}
+
+/* Positioning of links into columns */
+.footer-column div {
+  /* display: flex; */
+  flex-direction: column;
+  padding-top: 20px;
+  padding-right: 100px;
+}
+
+/* Styling for links */
+.footer-column a {
+  color: rgb(184, 176, 176);
+  text-decoration: none;
+  padding-bottom: 0.3125rem;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Styling and call to action when pointer hovers over links */
+.footer-column a:hover {
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-logo {
+  width: 300px;
+  height: auto;
+  padding: 0;
+}
+
+*/ */ .highlight {
+  color: red;
+}
+
+/* The message box is shown when form components */
+#alert-message {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#alert-message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
